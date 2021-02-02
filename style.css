@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #22c1c3, #fdbb2d );
+}
+header{
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.todo_input, .todo_description, .todo_date{
+    min-width: 30%;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    background: none;
+    font-size: 16px;
+    color: rgb(62, 62, 62);
+    border-bottom:solid 2px rgb(62, 62, 62);
+}
+.todo_button{
+    padding: 5px 10px;
+    margin: 5px;
+    color: rgb(62, 62, 62);
+    background-color: lightgreen;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+.todo_button:hover{
+    background-color: #22c1c3;
+}
+.todo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_list{
+    width: 100%;
+    list-style: none;
+}
+.todo{
+    margin: 7px;
+    background: none;
+    border-bottom: solid 2px rgb(62, 62, 62);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.todo li{
+    flex: 1;
+}
+.checked_btn, .delete_btn{
+    background: none;
+    color: rgb(62, 62, 62);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.checked_btn:hover{
+    background-color: #22c1c3;
+}
+.delete_btn:hover{
+    background-color: #fdbb2d;
+}
+.todo-description{
+    flex:2;
+}
+
+.todo-deadline{
+    flex: end;
+    margin: 3px;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;   
+}
